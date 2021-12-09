@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
-import { userInfoState } from "../recoil/atoms";
+import { atomState } from "../recoil/atoms";
 
 function UserInfo() {
-  const [userInfo, setUserInfo] = useRecoilState(userInfoState);
+  // useRecoilState ===> atom에서 state를 가져오고, setState를 통해 state를 변경할 수 있다.
+  const [userInfo, setUserInfo] = useRecoilState(atomState);
 
   const updateFiled = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
