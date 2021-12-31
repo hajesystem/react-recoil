@@ -9,7 +9,9 @@ ReactDOM.render(
   <React.StrictMode>
     {/* 리코일 상태를 사용하는 상위 컴포넌트를 지정한다. */}
     <RecoilRoot>
-      <App />
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <App />
+      </React.Suspense>
     </RecoilRoot>
   </React.StrictMode>,
   document.getElementById('root')
