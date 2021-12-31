@@ -1,14 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Root() {
   return (
     <>
       <div>
-        <Link to={"/userecoilstate"}>useRecoilState link</Link>
+        <Link to={'/userecoilstate'}>useRecoilState link</Link>
       </div>
       <div>
-        <Link to={"/userecoilvalue"}>useRecoilState link</Link>
+        <Link to={'/userecoilvalue'}>selector & useRecoilValue link</Link>
+      </div>
+      <div>
+        <Link to={'/recoilasyncselector'}>
+          async & selector & useRecoilValue link
+        </Link>
       </div>
     </>
   );

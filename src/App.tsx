@@ -1,9 +1,10 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Root from "./components/Root";
-import RecoilUseRecoilState from "./components/RecoilUseRecoilState";
-import RecoilUseRecoilValue from "./components/RecoilUseRecoilValue";
+import Root from './components/Root';
+import RecoilUseRecoilState from './components/RecoilUseRecoilState';
+import RecoilUseRecoilValue from './components/RecoilUseRecoilValue';
+import RecoilAsyncSelector from './components/RecoilAsyncSelector';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Root />} />
         <Route path="/userecoilstate" element={<RecoilUseRecoilState />} />
         <Route path="/userecoilvalue" element={<RecoilUseRecoilValue />} />
+        <Route path="/recoilasyncselector" element={<RecoilAsyncSelector />} />
       </Routes>
     </BrowserRouter>
   );

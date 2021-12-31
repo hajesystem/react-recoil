@@ -2,7 +2,9 @@
 
 - yarn add recoil
 
-# useRecoilState
+#
+
+# atom / useRecoilState
 
 1.  index.tsx 에서 RecoilRoot 컴포넌트로 감싼다.
 
@@ -25,7 +27,7 @@ const userState = atom({
 });
 ```
 
-3. components 만들기\
+3. useRecoilState 사용하여 components 만들기\
    components/RecoilUseRecoilState.tsx
 
 ```tsx
@@ -61,3 +63,7 @@ function RecoilUseRecoilState() {
   );
 }
 ```
+
+#
+
+# selector / useRecoilValue

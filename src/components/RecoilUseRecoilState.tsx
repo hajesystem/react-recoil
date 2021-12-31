@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useRecoilState } from "recoil";
-import { userState } from "../recoil/atoms";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
+import { userState } from '../recoil/atoms';
 
 // useRecoilState를 이용하여 atom을 가져오고 set을 이용하여 state를 변경한다.
 function RecoilUseRecoilState() {
@@ -14,7 +14,7 @@ function RecoilUseRecoilState() {
   return (
     <>
       <h3>useRecoilState</h3>
-      <Link to={"/"}>Home</Link>
+      <Link to={'/'}>Home</Link>
       <h4>idx : {userInfo.id}</h4>
       <h4>user ID : {userInfo.user}</h4>
       <h4>user NAME : {userInfo.name}</h4>
