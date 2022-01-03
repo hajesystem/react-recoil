@@ -6,7 +6,7 @@ function RecoilAsyncSelector() {
   const asyncState = useRecoilValue(userAsyncSelectorState);
   return (
     <>
-      <h3>AsyncSelector-useRecoilValue</h3>
+      <h3>AsyncSelector-useRecoilValue : with React.Suspense</h3>
       <Link to={'/'}>Home</Link>
       <h4>id : {asyncState.id}</h4>
       <h4>userId : {asyncState.userId}</h4>

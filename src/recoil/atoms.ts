@@ -5,6 +5,11 @@ export const userState = atom({
   default: { id: 'initial ID', user: 'initial User', name: 'initial Name' },
 });
 
+export const syncState = atom({
+  key: 'syncState',
+  default: { userId: 0, id: 0, title: 'none', body: 'none' },
+});
+
 export const asyncState = atom({
   key: 'asyncState',
   default: { userId: 0, id: 0, title: 'none', body: 'none' },

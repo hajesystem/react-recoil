@@ -5,6 +5,7 @@ import Root from './components/Root';
 import RecoilUseRecoilState from './components/RecoilUseRecoilState';
 import RecoilUseRecoilValue from './components/RecoilUseRecoilValue';
 import RecoilAsyncSelector from './components/RecoilAsyncSelector';
+import RecoilSyncSelector from './components/RecoilSyncSelector';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Root />} />
         <Route path="/userecoilstate" element={<RecoilUseRecoilState />} />
         <Route path="/userecoilvalue" element={<RecoilUseRecoilValue />} />
+        <Route path="/recoilsyncselector" element={<RecoilSyncSelector />} />
         <Route path="/recoilasyncselector" element={<RecoilAsyncSelector />} />
       </Routes>
     </BrowserRouter>

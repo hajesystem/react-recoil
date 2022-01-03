@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import { RecoilRoot } from 'recoil';
 import './index.css';
@@ -9,9 +9,9 @@ ReactDOM.render(
   <React.StrictMode>
     {/* 리코일 상태를 사용하는 상위 컴포넌트를 지정한다. */}
     <RecoilRoot>
-      <React.Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <App />
-      </React.Suspense>
+      </Suspense>
     </RecoilRoot>
   </React.StrictMode>,
   document.getElementById('root')

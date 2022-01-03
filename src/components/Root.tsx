@@ -11,8 +11,13 @@ function Root() {
         <Link to={'/userecoilvalue'}>selector & useRecoilValue link</Link>
       </div>
       <div>
+        <Link to={'/recoilsyncselector'}>
+          sync & selector & useRecoilValue link
+        </Link>
+      </div>
+      <div>
         <Link to={'/recoilasyncselector'}>
-          async & selector & useRecoilValue link
+          async & selector & useRecoilValue & React.Suspense link
         </Link>
       </div>
     </>

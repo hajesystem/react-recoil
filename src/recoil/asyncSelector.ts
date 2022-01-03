@@ -8,8 +8,6 @@ type AsyncType = {
   body: string;
 };
 
-// const getData = () => axios.get('https://jsonplaceholder.typicode.com/posts/1');
-
 export const userAsyncSelectorState = selector<AsyncType>({
   key: 'userAsyncSelectorState',
   get: async () => {
